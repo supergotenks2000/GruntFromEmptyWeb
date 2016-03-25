@@ -1,7 +1,7 @@
 ﻿class Food {
     constructor(name: string, calories: number) {
         this._name = name;
-        this._calories = calories;
+        this._calories = calories; 
     }
 
     private _name: string;
@@ -18,5 +18,10 @@
     get Taste(): Tastes { return this._taste }
     set Taste(value: Tastes) {
         this._taste = value;
+    }
+
+    private _isGood: boolean;
+    get IsGood() {
+        return this._isGood;
     }
 }

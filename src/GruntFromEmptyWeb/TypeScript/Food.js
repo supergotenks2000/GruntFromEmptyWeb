@@ -25,5 +25,12 @@ var Food = (function () {
         enumerable: true,
         configurable: true
     });
+    Object.defineProperty(Food.prototype, "IsGood", {
+        get: function () {
+            return this._isGood;
+        },
+        enumerable: true,
+        configurable: true
+    });
     return Food;
 })();
